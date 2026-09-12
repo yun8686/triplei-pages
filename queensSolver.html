@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Queensソルバー（Queens Solver）</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --accent: #1b5e3a;
+    --rule: #e2e2e5;
+    --card: #f6f7f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #f2f2f2;
+      --muted: #a3a3a8;
+      --accent: #6fcf97;
+      --rule: #2c2c2e;
+      --card: #1c1e1c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+    line-height: 1.8;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+    color: var(--accent);
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 40px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 {
+    font-size: 1rem;
+    margin-top: 24px;
+    color: var(--accent);
+  }
+  p, li { font-size: 0.98rem; }
+  ul { padding-left: 1.3em; }
+  a { color: var(--accent); }
+  .note {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+  <p class="meta">Queensソルバー（Queens Solver）&nbsp;&middot;&nbsp;制定日: 2026年9月12日</p>
+
+  <p><strong>Queensソルバー（Queens Solver）</strong>（以下「本アプリ」）における、ユーザーの情報の取り扱いについて説明します。</p>
+
+  <p><strong>本アプリは個人情報を一切収集・保存・送信しません。</strong>すべての処理は端末内で完結し、ネットワーク通信の機能自体を持ちません。</p>
+
+  <h2>1. 収集する情報とその利用目的</h2>
+  <p>本アプリはアカウント登録・ログインを必要としません。氏名・メールアドレス・電話番号など、ユーザー個人を特定する情報は収集しません。</p>
+
+  <h3>1-1. 端末内に保存される設定</h3>
+  <p>本アプリが端末に保存する設定は、アプリ内で選択した<strong>表示言語の1項目のみ</strong>です。Androidのアプリ専用領域に保存されるため他のアプリから読み取ることはできず、アプリをアンインストールすると削除されます。外部のサーバーへ送信・同期されることはありません。</p>
+
+  <h2>2. 画面のキャプチャについて</h2>
+  <p>本アプリは、パズルの盤面を読み取るためにAndroidの画面キャプチャAPI（MediaProjection）を使用します。キャプチャの開始前にAndroidが必ず明示的な同意を求め、実行中は通知とステータス表示が出ます。</p>
+  <ul>
+    <li>キャプチャはオーバーレイを起動している間、かつボタンをタップした瞬間だけ動作します。</li>
+    <li>取得した画像は端末のメモリ上で解析され、直後に破棄されます。</li>
+    <li>取得した画像を保存することも、開発者が閲覧することも、端末の外に送信することもありません。</li>
+  </ul>
+
+  <h2>3. インターネット通信</h2>
+  <p>公開版の本アプリは <code>INTERNET</code> 権限を要求していません。そのため、ネットワーク経由でデータを送受信することが技術的にできません。広告表示・アクセス解析・外部サーバーとの通信機能を持たないため、ユーザーの情報が外部に送信されることはありません。</p>
+
+  <h2>4. 第三者への提供</h2>
+  <p>本アプリは個人を特定する情報を収集していないため、第三者に提供することもありません。</p>
+
+  <h2>5. 広告・トラッキング</h2>
+  <p>本アプリは広告SDK・第三者アクセス解析SDK（Google Analytics等）・クラッシュレポートSDKのいずれも組み込んでいません。ユーザーの行動を広告目的で追跡することはありません。</p>
+
+  <h2>6. 要求する権限とその理由</h2>
+  <ul>
+    <li><strong>他のアプリの上に表示</strong> — 丸いボタンと解答パネルを他のアプリの上に表示するために使います。</li>
+    <li><strong>画面のキャプチャ</strong> — 上記のとおり、画面から盤面を読み取るために使います。</li>
+    <li><strong>前景サービス</strong> — 他のアプリを使っている間もオーバーレイと画面キャプチャを動かし続けるために、Androidが必要とします。</li>
+    <li><strong>通知</strong> — 画面キャプチャの前景サービス実行中は、通知の表示がAndroidで義務づけられているためです。</li>
+  </ul>
+
+  <h2>7. データの削除</h2>
+  <p>表示言語の設定は端末内にのみ保存されるため、アプリのアンインストールによりユーザー自身で削除できます。</p>
+
+  <h2>8. 未成年の利用について</h2>
+  <p>本アプリは子ども向けに設計されたものではありません。また、いかなる情報も収集しないため、子どもの情報を収集することもありません。</p>
+
+  <h2>9. 本ポリシーの変更</h2>
+  <p>本ポリシーの内容は、法令の変更や本アプリの機能追加に伴い、予告なく変更することがあります。重要な変更がある場合は、アプリ内または本ページにて周知します。</p>
+
+  <h2>10. お問い合わせ</h2>
+  <p>
+    本プライバシーポリシーに関するご質問は、以下のメールアドレスまでお問い合わせください。<br />
+    <a href="mailto:yun.app.yun@gmail.com">yun.app.yun@gmail.com</a>
+  </p>
+
+  <p class="note">本アプリは個人が趣味で作った非公式のツールです。LinkedIn Corporation をはじめ、いかなるパズル提供元とも提携・承認・関係はありません。各商標は各権利者に帰属します。</p>
+</main>
+</body>
+</html>

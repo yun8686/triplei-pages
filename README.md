@@ -13,8 +13,11 @@ GitHub Pagesでホスティングするためのリポジトリ。
 - [Break100 AI Coach サポート](https://yun8686.github.io/triplei-pages/break100AiCoachSupport.html)
 - [カタチ合わせ（Shape Match） プライバシーポリシー](https://yun8686.github.io/triplei-pages/shapePuzzle.html)
 - [カタチ合わせ（Shape Match） サポート](https://yun8686.github.io/triplei-pages/shapePuzzleSupport.html)
+- [Queensソルバー（Queens Solver） プライバシーポリシー](https://yun8686.github.io/triplei-pages/queensSolver.html)
+- [Queensソルバー（Queens Solver） サポート](https://yun8686.github.io/triplei-pages/queensSolverSupport.html)
 
 ソースは各アプリのリポジトリ側にもある（例: Break100 AI Coachは
 `break100_ai_coach/release/privacy_policy/`、カタチ合わせは
-`shape_puzzle/release/privacy_policy/`）。内容を更新する場合は
+`shape_puzzle/release/privacy_policy/`、Queensソルバーは
+`queen-puzzle-solver/docs/`）。内容を更新する場合は
 元のアプリリポジトリ側を先に直し、このリポジトリへコピーする。
